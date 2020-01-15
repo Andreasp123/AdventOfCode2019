@@ -1,4 +1,3 @@
-from builtins import int, open, enumerate, zip
 
 
 def read_input():
