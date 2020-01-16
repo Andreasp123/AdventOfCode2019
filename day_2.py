@@ -18,7 +18,7 @@ def loop_opcodes():
             computer = [val if val is not 99 else StopIteration for val in intcodes]
             break
         position += 4
-    print(f'Response is {computer[0]}')
+    print(f'Response is {computer[0]}')  # 5866714
 
 
 loop_opcodes()
