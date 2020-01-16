@@ -15,13 +15,10 @@ def loop_opcodes():
             output_position = intcodes[position + 3]
             intcodes[output_position] = intcodes[intcodes[position + 1]] * intcodes[intcodes[position + 2]]
         if intcodes[position] == 99:
-            for val in intcodes:
-                computer.append(val)
-                if val == 99:
-                    break
+            computer = [val if val is not 99 else StopIteration for val in intcodes]
             break
         position += 4
-    print(f'Response is {computer[0]}')
+    print(f'Response is {computer[0]}')  # 5866714
 
 
 loop_opcodes()
